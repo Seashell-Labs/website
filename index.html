@@ -29,11 +29,30 @@
             opacity: 0.9;
         }
         
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
         h1 {
             font-weight: 300;
             font-size: 1.8rem;
-            margin: 15px 0;
             letter-spacing: 0.5px;
+            margin: 0;
+        }
+        
+        .soon-tag {
+            background-color: #3f62f6;
+            color: white;
+            font-size: 0.6rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            display: inline-block;
         }
         
         .tagline {
@@ -65,14 +84,6 @@
             background-color: #ddd;
             margin: 30px auto;
         }
-        
-        .coming-soon {
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #777;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
@@ -81,7 +92,10 @@
             <img src="./logo.png" alt="Seashell Network Icon" width="80">
         </div>
         
-        <h1>Seashell Network</h1>
+        <div class="title-container">
+            <h1>Seashell Network</h1>
+            <span class="soon-tag">SOON</span>
+        </div>
         
         <div class="tagline">Store your physical stuff onchain, unlock hundreds of possibilities!</div>
         
@@ -90,8 +104,6 @@
         <a href="https://opensea.io/collection/seashellnetwork" class="link">Genesis NFT collection</a>
         
         <div class="separator"></div>
-        
-        <div class="coming-soon">SOON</div>
     </div>
 </body>
 </html>
